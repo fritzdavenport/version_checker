@@ -1,0 +1,33 @@
+{
+  "name": "resource",
+  "plural": "resources",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "hostname": {
+      "type": "string",
+      "required": true
+    },
+    "endpoints": {
+      "type": [
+        "object"
+      ]
+    },
+    "added": {
+      "type": "date"
+    },
+    "modified": {
+      "type": "date"
+    },
+    "last_run": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
